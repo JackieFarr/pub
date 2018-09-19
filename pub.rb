@@ -17,4 +17,8 @@ class Pub
   #   @drinks.count
   # end
 
+  def till_add(bar)
+    pay = bar.lose_drink.price
+    @till += pay
+  end
 end

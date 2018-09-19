@@ -31,5 +31,11 @@ class TestPub < MiniTest::Test
     # assert_equal(@drinks)
   end
 
+  def test_till_increase()
+    @bar.till_add(@bar)
+    assert_equal(113, @bar.till)
+  end
+
+
 
 end

@@ -13,4 +13,11 @@ class Customer
     @drinks_bought << drink
   end
 
+  def pay_drink(bar)
+    drink = bar.lose_drink.price
+    @wallet -= drink
+  end
+
+
+
 end

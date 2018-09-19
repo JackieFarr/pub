@@ -29,6 +29,21 @@ def test_customer_gets_drink()
   assert_equal("Beer", @drink2.name)
 end
 
+def test_customer_pays_drink()
+customer = Customer.new("Ana", 20)
+customer.pay_drink(@bar)
+assert_equal(7, customer.wallet)
+
+end
+
+
+
+
+
+
+
+
+
 
 
 

@@ -17,8 +17,17 @@ class Pub
   #   @drinks.count
   # end
 
-  def till_add(bar)
-    pay = bar.lose_drink.price
-    @till += pay
+  def till_add(price)
+  @till += price
+    # pay = bar.lose_drink.price
+    # @till += pay
+  end
+
+  def check_age(customer)
+    if customer.age > 18
+      p "You can drink alcohol"
+    else 
+      p "No booze"
+    end
   end
 end

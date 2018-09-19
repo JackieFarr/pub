@@ -25,5 +25,11 @@ class TestPub < MiniTest::Test
     assert_equal([@drink1, @drink2], @bar.drinks)
   end
 
+  def test_pub_lose_drink()
+    drink_lost = @bar.lose_drink
+    assert_equal(@drink2.name, drink_lost.name)
+    # assert_equal(@drinks)
+  end
+
 
 end

@@ -5,7 +5,12 @@ class Customer
   def initialize (name, wallet)
     @name = name
     @wallet = wallet
-    @drink = []
+    @drinks_bought = []
+  end
+
+  def gets_drink(bar)
+    drink = bar.lose_drink
+    @drinks_bought << drink
   end
 
 end

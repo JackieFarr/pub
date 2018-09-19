@@ -6,6 +6,6 @@ class Customer
     @name = name
     @wallet = wallet
     @drink = []
-  end 
-
   end
+
+end

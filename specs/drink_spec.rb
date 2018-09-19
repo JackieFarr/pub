@@ -4,6 +4,7 @@ require_relative("../drink.rb")
 
 class TestDrink < MiniTest::Test
 
+
   def test_drink_name()
     drink = Drink.new("Beer", 13)
     assert_equal("Beer", drink.name)
